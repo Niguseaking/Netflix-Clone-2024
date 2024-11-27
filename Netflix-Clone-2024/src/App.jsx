@@ -1,17 +1,36 @@
+// import { useState } from 'react'
+// import './App.css'
+// import Home from './Pages/Home/Home'
+// import
+// function App() {
+//   const [count, setCount] = useState(0)
+
+//   return (
+    
+//       <div className='App'>
+//        < Home/>
+//       </div>
+      
+    
+//   )
+
+
+// export default App
+// // }
 import { useState } from 'react'
 import './App.css'
-import Home from './Pages/Home/Home'
+import Home from '././Pages/Home/Home';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    
-      <div className='App'>
-       < Home/>
-      </div>
-      
-    
+    <>
+     <div className="App">
+      <Home/>
+     </div>
+    </>
   )
 }
 
-export default App
+export default App

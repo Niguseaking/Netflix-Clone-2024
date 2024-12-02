@@ -66,28 +66,31 @@
 import React, { useState, useEffect } from "react";
 import "../Row/Row.css";
 import axios from "../../Utils/Axios";
-import movieTrailer from 'movie-trailer'
+import movieTrailer from 'movie-trailer';
 import YouTube from 'react-youtube';
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
     const [movies, setMovie] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState("");
 
+    //const base_url = "https://image.tmdb.org/t/p/original";
     const base_url = "https://image.tmdb.org/t/p/original";
+
 
 
     useEffect(() => {
         (async () => {
             try {
-                console.log(fetchUrl)
+                console.log(fetchUrl);
                 const request = await axios.get(fetchUrl);
-                console.log(request)
+                console.log(request.data);
                 setMovie(request.data.results);
             } catch (error) {
-                console.log("error", error);
+                console.error("API Fetch Error:", error);
             }
-        })()
+        })();
     }, [fetchUrl]);
+    
 
     const handleClick = (movie) => {
         if (trailerUrl) {

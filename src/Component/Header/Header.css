@@ -1,0 +1,96 @@
+.header_outer_container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /*bacground_color:rgb(148,132,132);*/
+    background-color: rgb(20,20,20);
+    background-color: transparent;
+    height: 10vh;
+    color: white;
+    transition: all 0.5%;
+    transition-timing-function: ease-in;
+    z-index:1;
+   /* background-color:red;*/
+}
+.nav_black{
+    background-color: rgb(20,20,20);
+}
+.header_conainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left ul{
+    width:140%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    /*bacground-color:lightblue;*/
+}
+.header_right ul{
+    width:150%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    
+    /*bacground-color:lightgreen;*/
+}
+/* Outer container for the header */
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+/* Background color when scrolled */
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+/* Inner container for the header */
+.header_container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left section styles */
+.header_left ul {
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Right section styles */
+.header_right ul {
+    width: 150%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Uncomment to add background colors for debugging */
+/* .header_left ul {
+    background-color: lightblue;
+} */
+
+/* .header_right ul {
+    background-color: lightgreen;
+} */

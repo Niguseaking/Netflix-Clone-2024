@@ -5,7 +5,7 @@
 // });
 
 // export default instance;
-import axios from "Axios";
+import axios from "axios";
 const API_KEY = import.meta.env.VITE_API_KEY;
 const instance = axios.create({
   baseURL: "https://api.themoviedb.org/3",
